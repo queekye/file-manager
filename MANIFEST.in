@@ -1,0 +1,11 @@
+include README.md HANDOFF.md AGENTS.md NOTICE LICENSE THIRD_PARTY_LICENSES.json
+include requirements*.txt requirements*.lock
+recursive-include LICENSES *
+recursive-include scripts *.py
+recursive-include resources *.ico
+recursive-include docs *.md
+recursive-include tests *.py
+recursive-include legacy *.py *.md *.spec *.iss
+exclude FileM.spec
+global-exclude *.pyc
+global-exclude *.db

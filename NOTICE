@@ -1,0 +1,28 @@
+File Manager public continuation
+Copyright (c) 2025-2026 Kang Chen.
+Project-owned source, documentation, synthetic fixtures and regenerated icons
+are licensed under GPL-3.0-only; see LICENSE for the complete unmodified text.
+The original private fileManager repository's reachable 17 commits identify
+Kang as the only author. Historical refs/assets remain private and are not
+changed or automatically relicensed by this source export.
+
+PyQt5 is GPLv3/commercial dual-licensed. This public project chooses GPLv3,
+not a claim of a commercial PyQt license. Qt runtime and all third-party packages
+retain their own licenses. Installed package license notices are in LICENSES/
+and their versions are recorded in THIRD_PARTY_LICENSES.json. Dependencies are
+obtained separately through pip and are not vendored in the source/wheel export.
+If distributing a frozen executable, the distributor must supply corresponding
+application source and satisfy Qt/PyQt and other bundled dependency obligations;
+local PyInstaller build success alone does not complete binary distribution.
+
+The four original ICO assets have uncertain separate artwork provenance, so
+they are excluded and replaced by simple original icons generated from
+scripts/generate_icons.py. docs/workflow-rules.md references a third-party
+starter and is excluded. Historical generated README HTML, machine-specific
+registry scripts and old release automation are excluded from active use.
+
+Primary license references:
+https://www.gnu.org/licenses/gpl-3.0.txt
+https://en.riverbankcomputing.com/software/pyqt
+https://riverbankcomputing.com/commercial/license-faq
+https://www.qt.io/licensing/open-source-lgpl-obligations

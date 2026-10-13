@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+setup.sh
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.cursor/*
+.ai/
+.cursorignore
+.cursorindexingignore
+notepads
+xnotes
+
+# Project specific
+output/
+logs/
+*.log
+*.db
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Windows specific
+*.exe
+*.msi
+*.dll
+*.pyd
+
+# Config files that might contain sensitive data
+config.yaml
+persons.db
+
+resources/backup/*
+.venv/
+.validation-state/
+.state/
+backups/
+FileM.spec

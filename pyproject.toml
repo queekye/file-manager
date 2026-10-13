@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personnel-file-manager"
+version = "1.8.0"
+description = "Windows personnel file organizer with guarded conflicts and local SQLite state"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "GPL-3.0-only"
+license-files = ["LICENSE", "NOTICE", "LICENSES/*"]
+authors = [{name = "Kang Chen"}]
+dependencies = ["PyQt5==5.15.11", "loguru==0.7.3", "PyYAML==6.0.3", "keyboard==0.13.5", "pypinyin==0.55.0"]
+classifiers = ["Operating System :: Microsoft :: Windows", "Development Status :: 4 - Beta"]
+
+[project.urls]
+Repository = "https://github.com/queekye/file-manager"
+Issues = "https://github.com/queekye/file-manager/issues"
+
+[project.scripts]
+file-manager = "src.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.setuptools.package-data]
+"src.windows" = ["icons/*.ico"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

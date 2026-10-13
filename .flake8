@@ -1,0 +1,20 @@
+[flake8]
+max-line-length = 100
+exclude = .git,__pycache__,build,dist,.pytest_cache,.vscode,.cursor
+ignore = 
+    # 允许在换行符前使用运算符
+    W503,
+    # 允许空行中含有空格
+    W293,
+    # 允许行尾有空格
+    W291,
+    # 允许文件末尾没有换行符
+    W292,
+    # 允许在 : 后面不加空格（与 Black 兼容）
+    E203
+per-file-ignores =
+    # 允许 __init__.py 中导入但未使用
+    __init__.py:F401,F403
+    # 允许测试文件中使用断言
+    test_*.py:S101
+max-complexity = 10

@@ -1,0 +1,90 @@
+[
+  {
+    "package": "PyQt5",
+    "version": "5.15.11",
+    "declared_license": "GPL v3",
+    "copied_license_files": [
+      "LICENSES/PyQt5-LICENSE"
+    ]
+  },
+  {
+    "package": "PyQt5-Qt5",
+    "version": "5.15.2",
+    "declared_license": "LGPL v3",
+    "copied_license_files": [
+      "LICENSES/PyQt5-Qt5-LICENSE"
+    ]
+  },
+  {
+    "package": "PyQt5-sip",
+    "version": "12.20.0",
+    "declared_license": "BSD-2-Clause",
+    "copied_license_files": [
+      "LICENSES/PyQt5-sip-LICENSE"
+    ]
+  },
+  {
+    "package": "loguru",
+    "version": "0.7.3",
+    "declared_license": "MIT",
+    "copied_license_files": [
+      "LICENSES/loguru-LICENSE"
+    ]
+  },
+  {
+    "package": "PyYAML",
+    "version": "6.0.3",
+    "declared_license": "MIT",
+    "copied_license_files": [
+      "LICENSES/PyYAML-LICENSE"
+    ]
+  },
+  {
+    "package": "keyboard",
+    "version": "0.13.5",
+    "declared_license": "MIT",
+    "copied_license_files": [
+      "LICENSES/keyboard-LICENSE.txt"
+    ]
+  },
+  {
+    "package": "pypinyin",
+    "version": "0.55.0",
+    "declared_license": "MIT",
+    "copied_license_files": [
+      "LICENSES/pypinyin-LICENSE.txt"
+    ]
+  },
+  {
+    "package": "colorama",
+    "version": "0.4.6",
+    "declared_license": null,
+    "copied_license_files": [
+      "LICENSES/colorama-LICENSE.txt"
+    ]
+  },
+  {
+    "package": "win32-setctime",
+    "version": "1.2.0",
+    "declared_license": "MIT license",
+    "copied_license_files": [
+      "LICENSES/win32-setctime-LICENSE"
+    ]
+  },
+  {
+    "package": "PyInstaller",
+    "version": "6.16.0",
+    "declared_license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "copied_license_files": [
+      "LICENSES/PyInstaller-COPYING.txt"
+    ]
+  },
+  {
+    "package": "Pillow",
+    "version": "11.3.0",
+    "declared_license": "MIT-CMU",
+    "copied_license_files": [
+      "LICENSES/Pillow-LICENSE"
+    ]
+  }
+]

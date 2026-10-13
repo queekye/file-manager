@@ -1,0 +1,5 @@
+PyQt5==5.15.11
+loguru==0.7.3
+PyYAML==6.0.3
+keyboard==0.13.5
+pypinyin==0.55.0
