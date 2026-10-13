@@ -1,5 +1,8 @@
 from pathlib import Path
 from types import SimpleNamespace
+import os
+import sys
+import subprocess
 import pytest
 
 from src.core.config import Config
@@ -12,6 +15,17 @@ from src.utils.state_paths import get_state_root
 
 PERSON = {'id':'fixture-001','name':'测试人员甲','directory':'fixture-person'}
 TYPE = {'id':'fixture-document','name':'测试文档','directory':'documents'}
+
+
+def test_cli_help_works_with_an_ascii_redirected_stream(tmp_path):
+    env = os.environ.copy()
+    env['PYTHONIOENCODING'] = 'ascii'
+    env['FILE_MANAGER_HOME'] = str(tmp_path/'state')
+    result = subprocess.run([sys.executable, '-m', 'src.main', '--help'],
+        env=env, capture_output=True, timeout=15)
+    assert result.returncode == 0, result.stderr.decode('utf8', errors='replace')
+    assert '--smoke-test' in result.stdout.decode('utf8')
+    assert not (tmp_path/'state').exists()
 
 
 def manager(tmp_path, **kwargs):

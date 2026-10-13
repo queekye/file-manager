@@ -388,6 +388,11 @@ def parse_arguments():
 
 def main():
     """主函数。"""
+    # Windows English hosts may redirect output using cp1252. The CLI's
+    # Chinese help must remain usable without a locale-specific environment.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="backslashreplace")
     if "--help" in sys.argv or "-h" in sys.argv:
         parse_arguments()
     smoke = "--smoke-test" in sys.argv

@@ -266,7 +266,7 @@
       "destination": "src/main.py",
       "source_sha256": "190a748df82d32eca822e25302b02ca5cec752af10ac4607a6dc56dcbc12f3e4",
       "action": "current source safely adapted; original retained in private source history",
-      "export_sha256": "0e98ab2e9985a60ec4aa2590a5825d474f69012f3a8e8801ff9c2adf9f0bef13"
+      "export_sha256": "d6245ab212b74a8d5ad0a8d5c39ad16be26c970655efd5a7f4aeb64bfa5f96e1"
     },
     {
       "source": "src/utils/path_utils.py",
@@ -499,7 +499,7 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "cee3baa80dbec7cda2d6d862a9edf5b11673ac0ec36622cf4f47da7547d2af46"
+      "sha256": "f1678fe4fc58f6375b3f722173a5cd45b2e3436f9835f53c3677ac5da4b23fff"
     },
     {
       "path": "LICENSE",
@@ -559,7 +559,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "aace4c602424585efe6cbcb805542b04dc2504843fdf4e8e915b2e1124b0d77a"
+      "sha256": "8bd7b2d4ef33a624d1c27eb8c4d4d60a917b52915e04bd3556bc19de75d80f1c"
     },
     {
       "path": "THIRD_PARTY_LICENSES.json",
@@ -743,7 +743,7 @@
     },
     {
       "path": "src/main.py",
-      "sha256": "0e98ab2e9985a60ec4aa2590a5825d474f69012f3a8e8801ff9c2adf9f0bef13"
+      "sha256": "d6245ab212b74a8d5ad0a8d5c39ad16be26c970655efd5a7f4aeb64bfa5f96e1"
     },
     {
       "path": "src/utils/path_utils.py",
@@ -843,7 +843,7 @@
     },
     {
       "path": "tests/test_public_safety.py",
-      "sha256": "854326084928f2778d309ea818bda373fd33e6deb79de08c3c06f3bd67ccef6c"
+      "sha256": "dae1e98037c63012214f4dacc288d4add557f9616e72f33e7c69aa8fc49bdd3d"
     },
     {
       "path": "tests/test_template_data.py",
@@ -852,5 +852,8 @@
   ],
   "private_history_visibility_unchanged": true,
   "synthetic_icons_rebuild": "scripts/generate_icons.py",
-  "privacy_review": "no account state, real personnel/document/database/config/log data; original registry paths and uncertain artwork excluded"
+  "privacy_review": "no account state, real personnel/document/database/config/log data; original registry paths and uncertain artwork excluded",
+  "post_publication_fixes": [
+    "UTF-8 redirected CLI output for English Windows and ASCII regression case"
+  ]
 }
